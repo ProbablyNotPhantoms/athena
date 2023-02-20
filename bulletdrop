@@ -1,0 +1,6 @@
+local gc = getgc(true)
+		for i,v in pairs(gc) do
+			if type(v) == 'table' and rawget(v,'BulletDrop')   then
+				rawset(v,'BulletDrop', 0)
+			end
+		end
